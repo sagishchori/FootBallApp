@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">FootBallApp</string>
+
+    <!-- Bottom Menu items -->
+    <string name="title_home">Home</string>
+    <string name="title_personal_info">Personal Info</string>
+    <string name="title_about">About</string>
+
+    <!-- Personal Info -->
+    <string name="personal_name">Name</string>
+    <string name="personal_email">E-Mail</string>
+    <string name="personal_sign_in">Sign In</string>
+    <string name="personal_details">Personal Details</string>
+
+    <!-- Home -->
+    <string name="start_game_button_text">Let\'s play</string>
+    <string name="sign_up_text">Sign up</string>
+    <string name="registration_full_name">Full Name</string>
+    <string name="registration_mobile_number">Mobile</string>
+    <string name="registration_e_mail">E-Mail</string>
+
+    <!-- First Game -->
+    <string name="first_stage">FIRST STAGE</string>
+    <string name="instructions_text">Try to score 3 goals to go to the next stage</string>
+    <string name="winning_text">What a hat-trick!</string>
+    <string name="next_stage_text">You go to the next stage\>\></string>
+</resources>

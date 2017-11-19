@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/spacing_standard">
+
+    <ImageView
+        android:id="@+id/home_screen_banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/registration_layout"
+        android:scaleType="fitCenter"/>
+    
+    <LinearLayout
+        android:id="@+id/registration_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:background="@android:color/black"
+        android:padding="@dimen/spacing_standard">
+
+        <include
+            android:id="@+id/registration_view"
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/button_width"
+            layout="@layout/registration_view" />
+
+        <TextView
+            android:id="@+id/start_game_button"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_normal"
+            android:text="@string/start_game_button_text"
+            android:background="@drawable/button_selector"/>
+    </LinearLayout>
+</RelativeLayout>

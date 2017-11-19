@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/spacing_standard">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/personal_details"
+        android:layout_marginBottom="@dimen/spacing_standard_double"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_standard_half">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/personal_name"
+            android:paddingLeft="@dimen/spacing_standard_double"
+            android:paddingTop="@dimen/spacing_standard"
+            android:paddingBottom="@dimen/spacing_standard"
+            android:paddingRight="@dimen/spacing_standard"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/personal_email"
+            android:paddingLeft="@dimen/spacing_standard_double"
+            android:paddingTop="@dimen/spacing_standard"
+            android:paddingBottom="@dimen/spacing_standard"
+            android:paddingRight="@dimen/spacing_standard"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/sign_in_button"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/personal_sign_in"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:elevation="2dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/button_selector"/>
+    </RelativeLayout>
+</LinearLayout>

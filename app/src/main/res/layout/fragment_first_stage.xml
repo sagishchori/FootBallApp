@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/spacing_standard">
+
+    <TextView
+        android:id="@+id/stage_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_standard_quarter"
+        android:textSize="@dimen/text_size_normal"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/first_stage"
+        android:layout_alignParentTop="true"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/instructions_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_standard_quarter"
+        android:textSize="@dimen/text_size_normal"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/instructions_text"
+        android:layout_below="@+id/stage_text_view"
+        android:gravity="center"/>
+
+    <com.sagishchori.footballapp.CustomViews.CustomRecyclerView
+        android:id="@+id/game_board_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/instructions_text_view"
+        android:layout_above="@+id/winning_text_view">
+
+    </com.sagishchori.footballapp.CustomViews.CustomRecyclerView>
+
+    <com.sagishchori.footballapp.CustomViews.TypeFaceTextView
+        android:id="@+id/winning_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_standard_quarter"
+        android:textSize="@dimen/text_size_normal"
+        android:textColor="@color/colorPrimary"
+        android:layout_above="@+id/next_stage_button"
+        android:text="@string/winning_text"
+        android:gravity="center"
+        custom:heebo_type="extra_bold"/>
+
+    <TextView
+        android:id="@+id/next_stage_button"
+        android:layout_width="@dimen/next_stage_button_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_standard_quarter"
+        android:textSize="@dimen/text_size_normal"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/next_stage_text"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/next_stage_button_background"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@android:color/transparent">
+
+    <EditText
+        android:id="@+id/registration_full_name"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_normal"
+        android:hint="@string/registration_full_name"
+        android:gravity="center"
+        android:padding="@dimen/spacing_standard_half"
+        android:layout_marginBottom="@dimen/spacing_standard"
+        android:background="@android:color/white"
+        android:imeOptions="actionNext"
+        android:maxLines="1"
+        android:inputType="textNoSuggestions"/>
+
+    <EditText
+        android:id="@+id/registration_mobile"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_normal"
+        android:hint="@string/registration_mobile_number"
+        android:gravity="center"
+        android:padding="@dimen/spacing_standard_half"
+        android:layout_marginBottom="@dimen/spacing_standard"
+        android:background="@android:color/white"
+        android:imeOptions="actionNext"
+        android:maxLines="1"
+        android:inputType="textNoSuggestions"/>
+
+    <EditText
+        android:id="@+id/registration_email"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_normal"
+        android:hint="@string/registration_e_mail"
+        android:gravity="center"
+        android:padding="@dimen/spacing_standard_half"
+        android:layout_marginBottom="@dimen/spacing_standard"
+        android:background="@android:color/white"
+        android:imeOptions="actionDone"
+        android:maxLines="1"
+        android:inputType="textNoSuggestions"/>
+</LinearLayout>

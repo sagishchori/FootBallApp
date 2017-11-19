@@ -1,0 +1,19 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Size dimensions -->
+    <dimen name="spacing_standard_quarter">4dp</dimen>
+    <dimen name="spacing_standard_half">8dp</dimen>
+    <dimen name="spacing_standard">16dp</dimen>
+    <dimen name="spacing_standard_double">32dp</dimen>
+    <dimen name="button_width">240dp</dimen>
+    <dimen name="button_height">40dp</dimen>
+
+    <!-- Text Dimensions -->
+    <dimen name="text_size_normal">14sp</dimen>
+
+    <!-- First Game -->
+    <dimen name="next_stage_button_width">200dp</dimen>
+</resources>

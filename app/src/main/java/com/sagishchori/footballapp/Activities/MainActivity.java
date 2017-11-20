@@ -17,9 +17,8 @@ import com.sagishchori.footballapp.CustomViews.SelectableLinearLayout;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity implements SelectableLinearLayout.OnItemSelectedListener
+public class MainActivity extends MainApplicationActivity implements SelectableLinearLayout.OnItemSelectedListener
 {
-
     public static final String HOME_TAB = "HOME_TAB";
     public static final String PERSONAL_INFO_TAB = "PERSONAL_INFO_TAB";
     public static final String ABOUT_TAB = "ABOUT_TAB";
@@ -109,7 +108,6 @@ public class MainActivity extends AppCompatActivity implements SelectableLinearL
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
         SelectableLinearLayout linearLayout = (SelectableLinearLayout) findViewById(R.id.menu_bottom_bar);
         linearLayout.setOnItemSelectedListener(this);
@@ -122,6 +120,12 @@ public class MainActivity extends AppCompatActivity implements SelectableLinearL
             showFragment(getIntent().getExtras().getString(EXTRA_ACTION_TAB_SELECTION, HOME_TAB));
         else
             showFragment(HOME_TAB);
+    }
+
+    @Override
+    protected int getViewResourceId()
+    {
+        return R.layout.activity_main;
     }
 
     /**

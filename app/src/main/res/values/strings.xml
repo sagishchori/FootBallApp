@@ -1,5 +1,11 @@
 <resources>
+
+    <!-- General Strings -->
     <string name="app_name">FootBallApp</string>
+    <string name="next">Next</string>
+
+    <!-- Launcher -->
+    <string name="loading_text">Loading...</string>
 
     <!-- Bottom Menu items -->
     <string name="title_home">Home</string>

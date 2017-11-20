@@ -17,7 +17,7 @@ import com.sagishchori.footballapp.R;
  * Created by user on 05/10/2017.
  */
 
-public class GameActivity extends AppCompatActivity
+public class GameActivity extends MainApplicationActivity
 {
     public static final String EXTRA_GAME_STAGE = "EXTRA_GAME_STAGE";
     public static final String FIRST_STAGE = "FIRST_STAGE";
@@ -32,8 +32,6 @@ public class GameActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_game);
-
         frameLayout = (FrameLayout) findViewById(R.id.content);
         header = (TextView) findViewById(R.id.stage_text_view);
 
@@ -41,6 +39,12 @@ public class GameActivity extends AppCompatActivity
             showFragment(getIntent().getExtras().getString(EXTRA_GAME_STAGE, FIRST_STAGE));
         else
             showFragment(FIRST_STAGE);
+    }
+
+    @Override
+    protected int getViewResourceId()
+    {
+        return R.layout.activity_game;
     }
 
     private void showFragment(String stage)

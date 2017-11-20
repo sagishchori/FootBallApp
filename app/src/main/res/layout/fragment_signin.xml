@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:text="Sign in with FaceBook"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/spacing_standard_half"/>
+
+    <RelativeLayout
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/spacing_standard_half">
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/or"
+            android:background="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Or"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/spacing_standard"
+            android:layout_marginRight="@dimen/spacing_standard"/>
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/or"
+            android:background="@color/colorAccent"/>
+    </RelativeLayout>
+
+    <com.sagishchori.footballapp.CustomViews.TypeFaceEditText
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:hint="@string/personal_email"
+        android:textSize="@dimen/text_size_normal"
+        android:layout_marginBottom="@dimen/spacing_standard_half"/>
+
+    <com.sagishchori.footballapp.CustomViews.TypeFaceTextView
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:text="@string/next"
+        android:textSize="@dimen/text_size_normal"
+        android:gravity="center"
+        android:background="@drawable/button_background"/>
+</LinearLayout>

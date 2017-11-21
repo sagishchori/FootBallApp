@@ -34,9 +34,9 @@ public class LauncherActivity extends MainApplicationActivity
             @Override
             public void run()
             {
-                if (SharedPreferencesWrapper.with(LauncherActivity.this).getStringData(UserData.USER_EMAIL).equals(""))
-                    startSignInActivity();
-                else
+//                if (SharedPreferencesWrapper.with(LauncherActivity.this).getStringData(UserData.USER_EMAIL).equals(""))
+//                    startSignInActivity();
+//                else
                     startMainActivity();
             }
         }, 1500);

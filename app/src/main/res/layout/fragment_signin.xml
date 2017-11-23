@@ -5,12 +5,13 @@
     android:layout_height="match_parent"
     android:gravity="center">
 
-    <TextView
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
-        android:text="Sign in with FaceBook"
-        android:gravity="center"
-        android:layout_marginBottom="@dimen/spacing_standard_half"/>
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp" />
 
     <RelativeLayout
         android:layout_width="@dimen/button_width"

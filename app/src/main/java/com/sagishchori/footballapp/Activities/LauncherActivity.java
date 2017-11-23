@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
+import com.facebook.Profile;
 import com.sagishchori.footballapp.Models.UserData;
 import com.sagishchori.footballapp.R;
 import com.sagishchori.footballapp.Utils.SharedPreferencesWrapper;
@@ -34,9 +35,11 @@ public class LauncherActivity extends MainApplicationActivity
             @Override
             public void run()
             {
-//                if (SharedPreferencesWrapper.with(LauncherActivity.this).getStringData(UserData.USER_EMAIL).equals(""))
-//                    startSignInActivity();
-//                else
+                if (Profile.getCurrentProfile() == null)
+                    startSignInActivity();
+                else if (SharedPreferencesWrapper.with(LauncherActivity.this).getStringData(UserData.USER_EMAIL).equals(""))
+                    startSignInActivity();
+                else
                     startMainActivity();
             }
         }, 1500);

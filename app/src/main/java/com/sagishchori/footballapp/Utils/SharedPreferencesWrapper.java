@@ -38,19 +38,19 @@ public class SharedPreferencesWrapper
         return manager;
     }
 
-    public void setIntData(String key, int value)
+    public boolean setIntData(String key, int value)
     {
-        editor.putInt(key, value).commit();
+        return editor.putInt(key, value).commit();
     }
 
-    public void setStringData(String key, String value)
+    public boolean setStringData(String key, String value)
     {
-        editor.putString(key, value).commit();
+        return editor.putString(key, value).commit();
     }
 
-    public void setBooleanData(String key, boolean value)
+    public boolean setBooleanData(String key, boolean value)
     {
-        editor.putBoolean(key, value).commit();
+        return editor.putBoolean(key, value).commit();
     }
 
     public int getIntData(String key)

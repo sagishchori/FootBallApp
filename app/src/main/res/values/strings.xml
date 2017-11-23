@@ -4,6 +4,10 @@
     <string name="app_name">FootBallApp</string>
     <string name="next">Next</string>
 
+    <!-- FaceBook -->
+    <string name="facebook_app_id">145078526139657</string>
+    <string name="fb_login_protocol_scheme">fb145078526139657</string>
+
     <!-- Launcher -->
     <string name="loading_text">Loading...</string>
 
